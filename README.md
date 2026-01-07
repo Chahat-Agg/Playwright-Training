@@ -1,0 +1,1 @@
+# This is Playwright with Javascript training material that is used to automate any type of web application.
