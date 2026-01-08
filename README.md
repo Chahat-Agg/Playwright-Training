@@ -1,1 +1,1 @@
-# This is Playwright with Javascript training material that is used to automate any type of web application.
+# This training material focuses on Playwright with JavaScript and is intended for automating various types of web applications.
