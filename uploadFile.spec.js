@@ -27,3 +27,11 @@ test("handle upload button", async({page})=> {
 
 })
 
+test("remove selected files", async({page})=> {
+    await page.goto("https://demoapps.qspiders.com/ui/fileUpload/multiple?sublist=3")
+    await page.locator("//input[@id='fileInput']").setInputFiles(["/Users/caggarwal/Downloads/image2.jpeg","/Users/caggarwal/Downloads/images.jpeg"])
+    await page.waitForTimeout(5000)
+    await page.locator("//input[@id='fileInput']").setInputFiles([])
+    await page.waitForTimeout(5000)
+
+})
