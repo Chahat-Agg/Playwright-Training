@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test'
 test.skip("basic authentication", async({page})=>{
-    await page.goto("https://admin:admin@basic-auth-git-main-shashis-projects-4fa03ca5.vercel.app/")
+    await page.goto("https://@basic-auth-git-main-shashis-projects-4fa03ca5.vercel.app/")
     const text= await page.locator("//p[contains(text(),'cong')]").textContent()
     expect(text).toContain("congratulations with valid credentials")
     await page.waitForTimeout(5000)
